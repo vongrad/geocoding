@@ -10,7 +10,7 @@ const (
 
 func TestGeocode(t *testing.T) {
 
-	api := API{apiKey: ""}
+	api := API{APIKey: ""}
 
 	lat, lng, err := api.Geocode(address)
 

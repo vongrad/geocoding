@@ -11,7 +11,7 @@ go get github.com/vongrad/geocoding
 ## Usage
 
 ``` go
-api := API{apiKey: "API_KEY"}
+api := API{APIKey: "API_KEY"}
 
 lat, lng, err := api.Geocode(address)
 ```

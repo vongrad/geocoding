@@ -11,13 +11,14 @@ const host = "https://maps.googleapis.com/maps/api/geocode/json"
 
 // API for interaction with Google Maps Geocoding API
 type API struct {
-	apiKey string
+	// Google Maps API Key
+	APIKey string
 }
 
 // Geocode returns the latitude and longitude given an address
 func (api API) Geocode(address string) (float64, float64, error) {
 
-	req, err := http.NewRequest("GET", host+"?address="+url.QueryEscape(address)+"&key="+api.apiKey, nil)
+	req, err := http.NewRequest("GET", host+"?address="+url.QueryEscape(address)+"&key="+api.APIKey, nil)
 
 	if err != nil {
 		return 0, 0, err
