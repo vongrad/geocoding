@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vongrad/geocoding.svg?branch=master)](https://travis-ci.org/vongrad/geocoding)
+
 # Google Maps Geocoding API for GoLang
 
 Simple Google Maps Geocoding API that translate address into latitude & longitude
